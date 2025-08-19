@@ -1,0 +1,26 @@
+package InputStream_OutStream;
+
+import java.util.Scanner;
+
+public class ScanneR {
+
+	public static void main(String[] args) {
+
+		// Initialize Scanner object
+		Scanner scan = new Scanner("JavaTpoint/Abhishek/Male/22");
+		
+		// Initialize the string delimiter
+		scan.useDelimiter("/");
+		
+		// Printing the tokenized Strings
+		while (scan.hasNext()) {
+			System.out.println(scan.next());
+		}
+		scan.close();
+		
+		
+
+	}
+
+}
+
